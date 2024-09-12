@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'PP';
+
+    /* Name you want to use for the font */
+    src: url('./fonts/PPNeueMontreal-Medium.otf') format('otf');
+    /* Path to font file */
+    /* Fallback font format */
+    font-weight: medium;
+    font-style: medium;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Karla";
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75em 2em;
+    display: flex;
+    z-index: 2;
+}
+
+nav .nav-item {
+    flex: 1;
+}
+
+nav .nav-item p {
+    text-transform: uppercase;
+    font-size: 13;
+    font-weight: 500;
+    padding: 1em 0.25em;
+    cursor: pointer;
+}
+
+.img-previews {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    opacity: 0;
+}
+
+.img-previews img {
+    width: 600px;
+    height: 700px;
+    padding: 1em 0;
+}
+
+.gallery-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 4em;
+}
+
+.gallery.layout-1-gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0%);
+}
+
+.gallery.layout-1-gallery .img {
+    position: absolute;
+    width: 100px;
+    height: 125px;
+}
+
+
+.gallery.layout-1-gallery #img-1 {
+    top: 0%;
+}
+
+.gallery.layout-1-gallery #img-2 {
+    top: 50%;
+}
+
+.gallery.layout-1-gallery #img-5,
+.gallery.layout-1-gallery #img-7,
+.gallery.layout-1-gallery #img-8,
+.gallery.layout-1-gallery #img-6 {
+    top: 25%;
+}
+
+.gallery.layout-1-gallery #img-3,
+.gallery.layout-1-gallery #img-4 {
+    left: 25%;
+}
+
+.gallery.layout-1-gallery #img-12,
+.gallery.layout-1-gallery #img-11,
+.gallery.layout-1-gallery #img-13 {
+    top: 15%;
+}
+
+.gallery.layout-1-gallery #img-9,
+.gallery.layout-1-gallery #img-10 {
+    top: 75%;
+}
+
+.gallery.layout-1-gallery #img-13 {
+    top: 50%;
+}
+
+.gallery.layout-1-gallery #img-6 {
+    top: 50%;
+}
+
+.gallery.layout-1-gallery #img-9,
+.gallery.layout-1-gallery #img-6 {
+    right: 2em;
+}
+
+.gallery.layout-2-gallery {
+    padding-top: 0.5em;
+    position: fixed;
+    top: 25%;
+    left: 10%;
+    transform: translateX(0%);
+}
+
+.gallery.layout-2-gallery .img {
+    width: 75px;
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+.gallery.layout-3-gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0%);
+}
+
+.gallery.layout-3-gallery .img {
+    position: absolute;
+    top: 4em;
+    right: 4em;
+    width: 300px;
+    height: 400px;
+
+}
+
+
+.minimap {
+    position: fixed;
+    top: 25%;
+    left: 12.5%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 90px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
